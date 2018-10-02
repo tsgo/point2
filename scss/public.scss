@@ -278,7 +278,7 @@ header {
           padding: 0 0;
           height: 88px;
           line-height: 88px;
-          margin-left: 60px;
+          margin-left: 58px;
           text-decoration: none;
           font-size: 16px;
           color: rgba(45, 45, 45, 1.00);
@@ -289,11 +289,11 @@ header {
           }
 
           @include range-width(820px, 955px) {
-            margin-left: 20px;
+            margin-left: 15px;
           }
 
           @include range-width(730px, 820px) {
-            font-size: 15px;
+            font-size: 14px;
             margin-left: 10px;
           }
           
