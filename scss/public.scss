@@ -324,8 +324,21 @@ header {
             }
           }
         }
+
         > div {
           position: relative;
+
+          .toplink {
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgba(45, 45, 45, 1.00);
+
+            &:hover, &:active {
+              color: rgba(60, 21, 117, 1.00);
+            }
+          } 
+
           &:hover, &.ahover {
             > div {
               display: inline-block;
@@ -379,6 +392,7 @@ header {
                   background-color: rgba(29, 102, 230, 1.00);
                 }
               }
+
               &.xx {
                 height: auto;
                 padding-left: 0;
@@ -402,8 +416,8 @@ header {
                   text-decoration: none;
                   text-align: left;
                   padding-left: 8px;
-
                 }
+
                 > a {
                   display: none;
                   position: relative;
@@ -416,6 +430,7 @@ header {
                   text-align: left;
                   border-top: 1px solid rgba(229, 229, 229, 1.00);
                   padding-left: 28px;
+
                   &:hover, &.active {
                     background-color: rgba(237, 237, 237, 1.00);
                     border-left: 0;
@@ -432,6 +447,7 @@ header {
                     }
                   }
                 }
+
                 &.a {
                   > span {
                     
@@ -459,6 +475,7 @@ header {
             }
           }
         }
+
         > div.right {
 
           .login {

@@ -202,13 +202,21 @@ $maxWidth: 1110px;
         &:first-child {
           padding-bottom: 20px;
         }
+
         b {
           font-size: 20px;
         }
 
-        &.d51 {
+        p {
+          display: inline-block;
+          margin: 10px 0;
 
+          &:nth-child(2) {
+            margin-top: 0; 
+          }
         }
+
+        &.d51 {}
 
         .image {
           position: relative;
@@ -236,23 +244,38 @@ $maxWidth: 1110px;
         .qrboxs {
           display: inline-block;
           width: 100%;
+          @include clearfix();
 
-          img {
+          .qrbox {
             display: inline-block;
-            width: 100%;
-            max-width: 100px;
             float: left;
-            margin-bottom: 10px;
+            width: calc(100% / 3);
+            border-bottom: 0;
+
+            img {
+              display: inline-block;
+              width: 100%;
+              max-width: 100px;
+              float: left;
+              margin-bottom: 10px;
+            }
+
+            i {
+              display: inline-block;
+              font-style: normal;
+              font-size: 13px;
+              color: white;
+            }
           }
 
-          p {
-            display: inline-block;
-            padding: 0;
-            margin: 0 0 0 15px;
-            color: white;
-            width: calc(100% - 100px - 15px);
-            float: left;
-          }
+          // p {
+          //   display: inline-block;
+          //   padding: 0;
+          //   margin: 0 0 0 10px;
+          //   color: white;
+          //   width: calc(100% - 100px - 15px);
+          //   float: left;
+          // }
         }
 
         .alink {
@@ -286,6 +309,7 @@ $maxWidth: 1110px;
           }
         }
       }
+
       div:last-child {
         border-bottom: 0;
       }
@@ -353,7 +377,7 @@ $maxWidth: 1110px;
           text-indent: 10px;
         }
         textArea {
-          height: 130px;
+          height: 210px;
           padding-top: 10px;
           resize: none;
         }
