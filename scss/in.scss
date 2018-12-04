@@ -8,15 +8,23 @@
 @import "_oa";
 
 body {
-  margin: 0;
+  margin: 0 auto;
   border-top: 5px solid rgba(107, 108, 111, 1.00);
 }
 
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(17, 0, 29, 1.00);
+  padding: 10px 0;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
 
 .in_boxs {
   display: inline-block;
-  width: 100%;
-  max-width: 600px;
+  width: 600px;
   margin: 40px 0;
 
     // @include range-width(0, 600px) {

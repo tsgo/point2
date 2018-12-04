@@ -1,0 +1,41 @@
+@import "_oa";
+
+body {
+  margin: 0 auto;
+  border-top: 5px solid rgba(107, 108, 111, 1.00);
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(17, 0, 29, 1.00);
+  padding: 10px 0;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+table {
+  display: inline-table;
+  width: 100%;
+
+  tr {
+    // width: 100%;
+
+    td {
+      padding: 0; 
+      
+      a {
+        display: inline-block;
+        font-size: 13px;
+        color: #653565;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover, &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
