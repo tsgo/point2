@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tw">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+
+    <title>Invoice</title>
+
+    <link href="css/in_table.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/imgLiquid-min.js" language="javascript" type="text/javascript" ></script>
+
+  <style type="text/css">
+  .ti {
+    font-size: 13px;
+    color: #000;
+}
+
+  .border {
+    border: thin solid #CCC;
+}
+  </style>
+  </head>
+
+  <body leftmargin="5" topmargin="5" marginwidth="5" marginheight="5" lang="zh-tw">
+    <center>
+      <table width="600" border="0" cellpadding="0" cellspacing="0" style='max-width:600px; margin: 40px 0 20px 0;'>
+        <!-- 表格1 -->
+        <tr>
+          <td>
+            <table width="600" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style='font-size:30px; color: #653565;'>Point Bar Review LLC</td>
+                <td style='text-align:right;'><a href="index.html"><img src="img/logo.png"></a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- 表格2 -->
+        <tr>
+          <td>
+            <table width="600" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style='height:10px; background-color:#653565;'></td>
+                <td style='height:10px; background-color:#999869;'></td>
+                <td style='height:10px; background-color:#666797;'></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- 表格3 -->
+        <tr>
+          <td>
+            <table width="600" border="0" cellpadding="0" cellspacing="0" style='margin-top:10px; border-bottom: 1px dotted rgba(107,108,111,0.3);'>
+              <tr>
+                <td ><table border="0">
+                <tr>
+                      <td style='display: inline-block; width:100%; font-size: 13px; color: #653565;'> 100 N Electric Ave, #19,</br>
+                        Alhambra, CA 91801 </td>
+                    </tr>
+                    <tr>
+                      <td style='display: inline-block; width:100%; font-size: 13px; color: #653565;'><b>Customer Service：</b></td>
+                    </tr>
+                    <tr>
+                      <td style='display: inline-block; width:100%; font-size: 13px; color: #653565;'><b>E-Mail：</b> <a href="mailto:contact@pointbarreview">contact@pointbarreview</a></td>
+                    </tr>
+                    <tr>
+                      <td style='display: inline-block; width:100%; font-size: 13px; color: #653565;'><b>Web：</b> <a href="www.pointbarreview.com" target="_blank">www.pointbarreview.com</a></td>
+                    </tr>
+                </table></td>
+                <td style='width:210px;'><table border="0">
+                    <tr>
+                      <td style='display: inline-block; width:100%; padding:0; text-align:right; font-size: 30px; color: #653565;'>Invoice</td>
+                    </tr>
+                    <tr>
+                      <td style='display: inline-block; width:100%; padding:0; text-align:right; font-size: 30px; color: #653565;'><span style="display: inline-block; width:100%; padding:0; text-align:right; font-size: 20px; color: #653565;">2018.06.01</span></td>
+                    </tr>
+                </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- 表格4 -->
+        <tr>
+          <td><table width="600" style='padding-bottom:10px; border-bottom: 1px dotted rgba(107,108,111,0.3);' cellspacing="0" cellpadding="0" >
+          <tr>
+                <th width="150" align="left" valign="middle" scope="col"><span class="ti"><b>Invoice No.：</b></span></th>
+                <th width="150" align="left" valign="middle" scope="col"><span class="ti" style="width:50%; font-size:13px; color:black;">00001</span></th>
+                <th width="150" align="left" valign="middle" scope="col"><span class="ti"><b>Point ID：</b></span></th>
+                <th width="150" align="left" valign="middle" scope="col"><span class="ti" style="width:50%; font-size:13px; color:black;">ADV0002</span></th>
+              </tr>
+              <tr>
+                <th width="150" align="left" valign="middle" scope="row"><span class="ti"><b>Name：</b></span></th>
+                <td width="150" align="left" valign="middle"><span class="ti" style="width:50%; font-size:13px; color:black;">Teresa Chu</span></td>
+                <td width="150" align="left" valign="middle"><span class="ti"><b>Phone：</b></span></td>
+                <td width="150" align="left" valign="middle"><span class="ti" style="width:50%; font-size:13px; color:black;">818-808-9802</span></td>
+              </tr>
+              <tr>
+                <th width="150" align="left" valign="middle" scope="row"><span class="ti"><b>Ship To：</b></span></th>
+                <td width="150" align="left" valign="middle"><span class="ti" style="width:50%; font-size:13px; color:black;">1125 Maxwell Lane</br>
+                Hoboekn NJ 07030</span></td>
+                <td width="150" align="left" valign="middle">&nbsp;</td>
+                <td width="150" align="left" valign="middle">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+
+        <!-- 表格5 -->
+        <tr>
+          <td><table width="600" border="1px soild #f2f2f2" cellpadding="0" cellspacing="0" class="border" style='margin:10px 0;'>
+            <tr>
+                <th width="200" height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><span class="ti"><b>Date</b></span></th>
+            <th width="200" height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><span class="ti"><b>Order No.</b></span></th>
+                <th width="200" height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><span class="ti"><b>Pay By</b></span></th>
+            </tr>
+              <tr>
+                <th width="200" height="30" align="center" valign="middle" scope="row"><span class="ti">2018-04-25</span></th>
+                <td width="200" height="30" align="center" valign="middle"><span class="ti">201804241833350001</span></td>
+                <td width="200" height="30" align="center" valign="middle"><span class="ti">ATM</span></td>
+            </tr>
+        </table></td>
+        </tr>
+
+        <!-- 表格6 -->
+        <tr>
+          <td><table width="600" border="1px soild #f2f2f2" cellpadding="0" cellspacing="0" class="border">
+          <tr class="ti">
+                <th height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><b>Quantity</b></th>
+                <th height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><b>Item</b></th>
+                <th height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><b>Unit Price</b></th>
+                <th height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><b>Discount</b></th>
+                <th height="30" align="center" valign="middle" bgcolor="#f2f2f2" scope="col"><b>Total</b></th>
+              </tr>
+              <tr class="ti">
+                <th height="30" align="center" valign="middle" scope="row"><span style="display: inline-block; width:100%;">1 </span></th>
+                <td height="30" align="center" valign="middle"><span style="display: inline-block; width:100%; ">3-Day Final Review </span></td>
+                <td height="30" align="center" valign="middle"><span style="display: inline-block; width:100%; ">USD $699.00 </span></td>
+                <td height="30" align="center" valign="middle"><span style="display: inline-block; width:100%; ">USD $199.00 </span></td>
+                <td height="30" align="center" valign="middle"><span style="display: inline-block; width:100%;">USD $500.00 </span></td>
+              </tr>
+              <tr>
+                <th height="30" align="center" valign="middle" scope="row">&nbsp;</th>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+              </tr>
+              <tr>
+                <th height="30" align="center" valign="middle" scope="row">&nbsp;</th>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+              </tr>
+              <tr>
+                <th height="30" align="center" valign="middle" scope="row">&nbsp;</th>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+                <td height="30" align="center" valign="middle">&nbsp;</td>
+              </tr>
+          </table>
+          </td>
+        </tr>
+
+        <!-- 表格7 -->
+        <tr>
+          <td>
+            <table style='width:300px; margin:10px 0; text-align: center; font-size:13px; color:black; float:right;' cellpadding="5px" cellspacing="0" border="1px soild #f2f2f2">
+              <tr style='display: inline-block; width:100%; float:left;'>
+                <td height="30" style='width:195px; background-color: #f2f2f2;'>
+                  <span class="ti"><b>Subtotal:</b>
+                </span></td>
+                <td height="30" style='width:105px;'><span class="ti">
+                USD $500.00
+              </span></td>
+              </tr>
+
+              <tr style='display: inline-block; width:100%; float:left;'>
+                <td height="30" style='width:195px; background-color: #f2f2f2;'>
+                  <span class="ti"><b>Balance Due:</b>
+                </span></td>
+                <td height="30" style='width:105px;'><span class="ti">
+                USD $500.00
+              </span></td>
+              </tr>  
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center> 
+
+    <footer>All rights reserved. © 2018 Point Bar Review</footer>
+
+  </body>
+</html>
