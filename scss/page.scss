@@ -147,6 +147,82 @@ $sideMenu: 280px;
         }
       }
 
+      .cn_boxs {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px dotted rgba(219, 221, 224, 1.00);
+        text-align: left;
+
+        i {
+          display: inline-block;
+          font-style: normal;
+          font-size: 18px;
+          font-weight: 600;
+          color: rgba(57, 34, 119, 1.00);
+          padding-top: 10px;
+        }
+
+        a {
+          display: inline-block;
+          padding: 10px 0; 
+          font-size: 18px;
+          color: #2d2d2d;
+          cursor: pointer;
+          text-decoration: none;
+          @include transition(all .3s);
+
+          &:hover, &:active {
+            color: rgba(57, 34, 119, 1.00);
+          }
+        }
+      }
+
+      .cn_page {
+        display: inline-block;
+        width: 100%;
+        padding: 20px 0 10px 0;
+
+        a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          @include border-radius(15px);
+          color: #2d2d2d;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 600;
+          text-decoration: none;
+          margin: 0 10px;
+          @include transition(all .3s);
+
+          @include range-width(0, 450px) {
+            margin: 0 5px;
+            font-size: 16px;
+
+            &:nth-child(5), &:nth-child(6) {
+              display: none;
+            }
+          }
+
+          &.cn_next {
+            width: auto;
+            height: auto;
+
+            &:hover, &:active {
+              color: rgba(57, 34, 119, 1.00);
+              background-color: transparent;
+              text-decoration: underline;
+            }
+          }
+
+          &:hover, &:active, &.cn_ok {
+            color: white;
+            background-color: rgba(57, 34, 119, 1.00);
+          }
+        }
+      }
+
       article {
         p {
           line-height: 28px;
