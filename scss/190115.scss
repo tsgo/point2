@@ -1,0 +1,157 @@
+/* Preload images */
+@import "_oa";
+
+body.blackMark{
+  overflow: hidden;
+}
+.blackmark.off{
+  display: none;
+}
+.blackmark {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(15, 15, 15, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  align-content: flex-start;
+  z-index: 99999999;
+
+  .note_box {
+    display: inline-block;
+    width: 100%;
+    max-width: 590px;
+    max-height: calc(100% - 10px * 2);
+    background-color: white;
+    padding: 25px 50px;
+    @include border-radius(3px);
+    margin-top: 80px;
+    text-align: left;
+
+    @include range-width(450px, 720px) {
+      width: calc(100% - 20px);
+      margin: 100px 10px 0 10px;
+      padding: 15px 20px; 
+      margin-top: 100px; 
+    }
+
+    @include range-width(0, 450px) {
+      width: calc(100% - 20px);
+      margin: 100px 10px 0 10px;
+      padding: 15px 20px; 
+      margin-top: 10px;
+    }
+
+    .ok_title {
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid rgba(233, 233, 233, 1.00);
+      text-align: left;
+      margin-bottom: 10px;
+
+      span {
+        display: inline-block;
+        padding: 10px 0 10px 5px;
+        font-size: 20px;
+        color: black;
+      }
+    }
+
+    .n_login_cent {
+      display: inline-block;
+      width: 100%;
+      // max-width: 350px;
+      margin: 15px 0;
+      text-align: left;
+      @include clearfix();
+
+      @include range-width(0, 600px) {
+        max-width: none;
+        width: calc(100% - 10px);
+      }
+
+      ~ * {
+        margin: 0 0 15px 0
+      }
+
+      &.notopm {
+        margin: 0 0 15px 0;
+      }
+
+      .n_ll {
+        display: inline-block;
+        float: left;
+        font-size: 14px;
+
+        input {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+
+      .n_lr {
+        display: inline-block;
+        float: right;
+        text-align: right;
+
+        a {
+          display: inline-block;
+          cursor: pointer;
+          color: rgba(114, 5, 216, 1.00);
+          text-decoration: underline;
+        }
+      }
+
+      .n_test, button {
+        display: inline-block;
+        width: 100%;
+        @include border-radius(3px);
+        background-color: rgba(125, 31, 217, 1.00);
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        @include transition(all .3s);
+
+        text-decoration: none;
+        text-align: center;
+
+        &:hover, &:active {
+          background-color: rgba(125, 31, 217, .9);
+        }
+      }
+
+      span {
+        display: inline-block;
+        font-size: 14px;
+        color: black;
+      }
+
+      a {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+        color: rgba(125, 31, 217, 1.00);
+        text-decoration: underline;
+      }
+
+      p {
+        display: inline-block;
+        padding: 0 0 0 5px;
+        margin: 0;
+        font-size: 14px;
+        color: rgba(39, 40, 34, 1.00);
+      }
+    }
+  }
+}
