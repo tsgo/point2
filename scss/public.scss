@@ -1304,6 +1304,89 @@ footer {
 
 
 
+// 190121
+.grc_boxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(239, 240, 241, 1.00);
+  padding: 20px !important;
+  text-align: left;
+
+  @include range-width(0, 450px) {
+    max-width: none;
+  }
+}
+
+.grc_box {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    @include clearfix();
+
+    @include range-width(0, 450px) {
+      max-width: none;
+    }
+    
+    label {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 39px;
+
+      @include range-width(0, 450px) {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        float: left;
+      }
+
+      input {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+
+        @include range-width(0, 450px) {
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          float: left;
+        }
+      }
+    }
+
+    i {
+      display: inline-block;
+      font-style: normal;
+      width: 50%;
+      margin: 0;
+      padding: 6px 0 0 0;
+      text-align: left;
+
+      @include range-width(0, 450px) {
+        float: left;
+        width: 90%;
+        padding: 0 0 0 10px;
+      }
+    }
+
+    button {
+      display: inline-block;
+      width: 100%;
+      background-color: rgba(60, 21, 119, 1.00);
+      color: white;
+      outline: 0;
+      border: 0;
+      padding: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  } 
+
+
+
+
 
 
 
