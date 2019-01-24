@@ -256,6 +256,7 @@ body {
         }
       
         &:nth-child(2) {
+
           text-align: left;
           background-color: rgba(255, 255, 255, 1.00);
           &.t {
@@ -373,19 +374,21 @@ body {
             > * {
               float: left;
               display: inline-block;
-              width: calc(50% - 40px / 2);
+              // width: calc(50% - 40px / 2);
+              width: 100%;
               border: 1px solid rgba(231, 232, 234, 1.00);
               background-color: rgba(255, 255, 255, 1.00);
               @include border-radius(3px);
+              margin-top: 20px;
 
-              @include range-width(1000px) {
-                &:nth-child(n + 3) {
-                  margin-top: 32px;
-                }
-                &:nth-child(2n + 2) {
-                  margin-left: 40px;
-                }
-              }
+              // @include range-width(1000px) {
+              //   &:nth-child(n + 3) {
+              //     margin-top: 32px;
+              //   }
+              //   &:nth-child(2n + 2) {
+              //     margin-left: 40px;
+              //   }
+              // }
               @include range-width(0, 1000px) {
                 margin: 0;
                 width: 100%;
@@ -408,6 +411,7 @@ body {
                     display: inline-block;
                   }
                   label {
+                    width: auto;
                     @include checkbox(rgba(63, 2, 132, 1.00));
                     margin-top: (45px - 20px) / 2 - 1px;
                   }
@@ -415,9 +419,13 @@ body {
                 &:nth-child(2) {
                   display: inline-block;
                   width: 100%;
-                  height: 134px;
+                  height: 250px;
                   padding: 14px 22px;
                   @include clearfix();
+
+                  @include range-width(0,450px) {
+                    height: auto;
+                  }
                   
                   > * {
                     float: left;
@@ -427,7 +435,12 @@ body {
                       padding-left: 24px;
                     }
                     &:nth-child(1) {
-                      height: 134px - 14px * 2;
+                      height: 225px;
+
+                      @include range-width(0,450px) {
+                        height: 100px;
+                      }
+
                       figure {
                         min-width: 100% !important;
                         min-height: 100% !important;
