@@ -212,7 +212,7 @@
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction {
-    bottom: 10px;
+    bottom: 23px;
     left: 0;
     width: 100%
 }
@@ -259,8 +259,8 @@
     background: #000;
     opacity: .2;
 
-    width: 15px !important;
-    height: 15px !important;
+    width: 20px !important;
+    height: 20px !important;
 /*    color: #8a8a8a;
     font-size: 1rem;*/
 }
@@ -307,7 +307,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 4px
+    margin: 0 4px;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
